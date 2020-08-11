@@ -2,68 +2,7 @@
 <head>
     <title>Resume</title>
     <style>
-        .personalDetails {
-            text-align: center;
-        }
-        .description{
-            margin-left: 100px;
-        }
-        .card {
-
-            transition: 0.3s;
-            padding: 2px 5px;
-            margin-left: 0px;
-        }
-        .column {
-            float: left;
-            padding: 0 10px;
-        }
-        .row {margin: 0 -0px;}
-        .col_1{
-            background-color: #3269a8;
-            color : aliceblue;
-            width: 20%;
-            height: 950px;
-            padding : 15px;
-            position : relative;
-            max-height: 800px;
-        }
-        .col_2{
-            background-color: white;
-            width: 70%;
-            padding: 0px 5px;
-            position: relative ;
-            letter-spacing: .2px;
-            height: 950px;
-            max-height: 800px;
-        }
-        .summary{
-            padding: 1px 4px 4px 10px;
-            marign-right:10px;
-            color: #969593;
-        }
-        .col_1_header{
-            width: 161px;
-            position:absolute;
-            background-color: #3251a8 ;
-            padding: 3px 0 ;
-        }
-        .col_1_header_before{
-            position:relative;
-            width:100%;
-            background-color: #3251a8
-        }
-        .header{
-            color: #3269a8;
-        }
-        .text_color{
-            color: #969593;
-        }
-        .separator {
-            width: 100%;
-            color : #cccbca;
-        }
-
+        <#include "css/template1.css">
     </style>
 </head>
 <body class="body">

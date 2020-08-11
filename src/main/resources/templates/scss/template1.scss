@@ -1,0 +1,74 @@
+$primary_background_color : #3269a8;
+$second_background_color : white;
+$summary_color : #969593;
+$separator_color : #cccbca;
+$block1_header_color : #3251a8;
+
+
+
+
+.personalDetails {
+  text-align: center;
+}
+.description{
+  margin-left: 100px;
+}
+.card {
+
+  transition: 0.3s;
+  padding: 2px 5px;
+  margin-left: 0px;
+}
+.column {
+  float: left;
+  padding: 0 10px;
+}
+.row {margin: 0 -5px;}
+.col_1{
+  background-color: $primary_background_color;
+  color : aliceblue;
+  width: 20%;
+  height: 950px;
+  padding : 17px;
+  position : relative;
+}
+.col_2{
+  background-color: $second_background_color;
+  width: 70%;
+  padding: 0px 5px;
+  position: relative ;
+  letter-spacing: .2px;
+  height: 950px;
+  max-height: 800px;
+}
+.summary{
+  padding: 1px 4px 4px 10px;
+  marign-right:10px;
+  color: $summary_color;
+}
+.col_1_header{
+  width: 159px;
+  position:absolute;
+  background-color: $block1_header_color ;
+  padding: 3px 0 ;
+}
+.col_1_header_before{
+  position:relative;
+  width:100%;
+  background-color: $block1_header_color;
+}
+.header{
+  color: $primary_background_color;
+}
+.text_color{
+  color: $summary_color;
+}
+.separator {
+  width: 100%;
+  color : $separator_color;
+}
+.body{
+  padding: 2px 2px 2px 5px;
+  height: 100%;
+  width: 100%;
+}

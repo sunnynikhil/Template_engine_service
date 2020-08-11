@@ -26,7 +26,7 @@ import com.adobe.platform.operation.pdfops.options.createpdf.PageLayout;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 
 import java.io.ByteArrayOutputStream;
@@ -38,7 +38,6 @@ import java.util.List;
 import java.util.Map;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 @Component
 @RestController
@@ -50,19 +49,20 @@ public class PDFController {
     UserRepostiory UserRepostiory;
 
 
-    @RequestMapping(value = "/generatorPDF")
-    public static void generatorPDF(HttpServletResponse response) throws Exception {
+    @CrossOrigin
+    @RequestMapping(value = "/generatorPDF/{template_name}/{theme_id}")
+    public static void generatorPDF(HttpServletResponse response, @PathVariable("template_name") String template_name,@PathVariable("theme_id") int theme_id) throws Exception {
 
         ByteArrayOutputStream baos = null;
         OutputStream out = null;
         try {
             Map<String,Object> data = new HashMap<>();
             data.put("name", "nikhil");
+            data.put("theme",theme_id);
 
-
-            baos = PDFServices.createPDF(data, "template1.ftl");;
+            baos = PDFServices.createPDF(data, template_name+".ftl");;
             response.setContentType( "application/x-msdownload");
-            String fileName = URLEncoder.encode("dowload.pdf", "UTF-8");
+            String fileName = URLEncoder.encode("resume.pdf", "UTF-8");
 
             response.setHeader( "Content-Disposition", "attachment;filename=" + fileName);
             out = response.getOutputStream();
