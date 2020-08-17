@@ -2,87 +2,7 @@
 <head>
     <title>Resume</title>
     <style>
-        .personalDetails {
-            text-align: center;
-        }
-        .description{
-            margin-left: 100px;
-        }
-        .card {
-            transition: 0.3s;
-            padding: 2px 2px;
-            margin-left: 0px;
-        }
-        .column {
-            float: left;
-            padding: 0px 1px;
-        }
-        .row {margin: 0 -0px;}
-        .col_1{
-            background-color: #c5c5c9;
-
-            width: 20%;
-            height: 950px;
-            padding : 15px;
-            position : relative;
-            max-height: 800px;
-        }
-        .col_2{
-            background-color: white;
-            width: 70%;
-            padding: 0px 5px;
-            position: relative ;
-            letter-spacing: .2px;
-            height: 950px;
-            max-height: 800px;
-
-        }
-        .summary{
-            padding: 1px 4px 4px 10px;
-            marign-right:10px;
-            color: #969593;
-        }
-        .col_1_header{
-            width: 161px;
-            position:absolute;
-            padding: 3px 0px;
-            color : #373d48;
-            font-size: 20px;
-        }
-        .col_1_header_before{
-            position:relative;
-            width:100%;
-            background-color: #3251a8
-        }
-        .header{
-            color: #373d48;
-        }
-        .text_color{
-            color: #969593;
-        }
-        .separator {
-            width: 100%;
-            color : #cccbca;
-        }
-        .body{
-            padding: -2px 2px 2px -5px;
-            height: 100%;
-            width: 100%;
-        }
-      .top_block{
-        background-color : #373d48;
-        color : #f0f0f5;
-       padding-bottom:1px;
-       width : 95%;
-
-      }
-      .name{
-        padding : 5px 1px 2px 10px;
-      }
-      .prof{
-        padding : 2px 1px 2px 10px;
-        color : #9b9b9b
-      }
+        <#include "css/template4_${theme}.css">
     </style>
 </head>
 <body class="body">
@@ -93,7 +13,7 @@
   </div>
 <div class="row">
 
-    <div class="column col_1">
+    <div class="column col_1" >
         <div class="col_1_header_before">
             <strong class="col_1_header">Personal info</strong></div>
             <br/>
